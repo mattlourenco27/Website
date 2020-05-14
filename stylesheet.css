@@ -13,3 +13,22 @@ h1, h2 {
 	
 	font-family: 'Roboto Mono', monospace;
 }
+div {
+	text-align: center;
+	background-color: pink;
+}
+p {
+	background-color: lightgreen;
+	display: inline-block;
+	text-align: left;
+	width: 80%;
+}
+header span, footer span {
+	float:right;
+}
+.separator {
+	background-color: DarkViolet;
+	color: white;
+	vertical-align: top;
+	height: 400px;
+}
