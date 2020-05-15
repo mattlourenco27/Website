@@ -5,12 +5,16 @@ body {
 	background-color: #F5ECCE;
 	font-family: 'Noto Sans JP', sans-serif;
 }
-section, article {
+#back-page {
 	background-color: white;
+	clear: both;
+}
+section, article {
+	text-align: left;
 	padding: 20px;
 }
 h1, h2 {
-	
+
 	font-family: 'Roboto Mono', monospace;
 }
 div {
@@ -27,8 +31,10 @@ header span, footer span {
 	float:right;
 }
 .separator {
+	display: block;
 	background-color: DarkViolet;
+	border-radius: 10px;
 	color: white;
 	vertical-align: top;
-	height: 400px;
+	height: 200px;
 }
