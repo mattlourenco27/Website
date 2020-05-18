@@ -34,7 +34,17 @@ header span, footer span {
 	display: block;
 	background-color: DarkViolet;
 	border-radius: 10px;
+	vertical-align: middle;
 	color: white;
-	vertical-align: top;
-	height: 200px;
+	height: 500px;
+}
+#icon-credit {
+	float: none;
+	display: block;
+	text-align: center;
+	clear: right;
+	color: BurlyWood;
+}
+#icon-credit a{
+	color: Brown;
 }
