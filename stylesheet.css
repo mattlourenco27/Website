@@ -16,15 +16,18 @@ body {
 
 /* header and footer configuration */
 nav ul {
+	list-style-type: none;
 	float: left;
 	margin: 0;
 	font-size: 20px;
 }
 nav li {
-	display: inline;
 	background-color: inherit;
-	border-radius: 0;
-	box-shadow: none;
+	display: inline;
+	color: white;
+	width: 50%;
+	padding: 5px 10px;
+	margin: 2px 0;
 }
 nav a:link {
 	color: DarkViolet;
@@ -79,22 +82,25 @@ section, article {
 h1, h2 {
 	font-family: 'Roboto Mono', monospace;
 }
-div {
-	text-align: center;
-	background-color: pink;
+#introduction {
+	display: block;
+	text-align: left;
+	height: 500px;
 }
 p {
-	background-color: lightgreen;
-	display: inline-block;
-	text-align: left;
-	width: 80%;
+	padding-top: 200px;
+}
+#profile-photo {
+	float: right;
+	margin-left: 2%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /** timeline sub-section **/
-ul {
+dl {
 	list-style-type: none;
 }
-li {
+dt {
 	background-color: DarkViolet;
 	color: white;
 	border-radius: 0 1028px 1028px 0;
@@ -111,7 +117,10 @@ li {
 /* section separators */
 .separator {
 	display: block;
+	clear: both;
+	text-align: center;
 	background-color: DarkViolet;
+	margin: 20px 0;
 	border-radius: 10px;
 	color: white;
 	vertical-align: middle;
