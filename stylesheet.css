@@ -109,9 +109,12 @@ dt {
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
+dd {
+	font-size: 0.7em;
+}
 dd img {
 	float: right;
-	margin: 0 0 0 20px;
+	margin: 20px 100px 0 20px;
 	padding: 5px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
