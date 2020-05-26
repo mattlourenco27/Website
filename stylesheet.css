@@ -87,7 +87,7 @@ h1, h2 {
 	text-align: left;
 	height: 500px;
 }
-p {
+#introduction p {
 	padding-top: 200px;
 }
 #profile-photo {
@@ -108,6 +108,18 @@ dt {
 	padding: 5px 10px;
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+dd img {
+	float: right;
+	margin: 0 0 0 20px;
+	padding: 5px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+.terminal {
+	list-style: none;
+	margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 .timeline-date {
 	float: right;
