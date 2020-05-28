@@ -81,6 +81,7 @@ section, article {
 }
 h1, h2 {
 	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5em;
 }
 #introduction {
 	display: block;
@@ -112,6 +113,9 @@ dt {
 dd {
 	font-size: 0.7em;
 }
+dd h4 {
+	margin: 0;
+}
 dd img {
 	float: right;
 	margin: 20px 100px 0 20px;
@@ -123,6 +127,7 @@ dd img {
 	margin-left: 0;
     padding-left: 1em;
     text-indent: -1em;
+    font-family: 'Roboto Mono', monospace;
 }
 .timeline-date {
 	float: right;
