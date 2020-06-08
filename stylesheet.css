@@ -11,6 +11,7 @@ body {
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
 	clear: both;
 }
 
@@ -110,6 +111,7 @@ h1, h2 {
 	float: right;
 	margin-left: 2%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
 }
 
 /** timeline sub-section **/
@@ -117,9 +119,10 @@ dl {
 	list-style-type: none;
 }
 dt {
+	clear: both;
 	background-color: DarkViolet;
 	color: white;
-	border-radius: 0 1028px 1028px 0;
+	border-radius: 10px 50px 50px 10px;
 	width: 50%;
 	padding: 5px 10px;
 	margin: 2px 0;
@@ -131,19 +134,21 @@ dd {
 dd h4 {
 	margin: 0;
 }
-dd img {
+.media-right {
 	float: right;
 	margin: 20px 100px 0 20px;
 	padding: 5px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
 }
 .terminal {
 	list-style: none;
 	margin-left: 0;
+	margin-top: 0;
 	margin-bottom: 20px;
-  padding-left: 1em;
-  text-indent: -1em;
-  font-family: 'Roboto Mono', monospace;
+  	padding-left: 1em;
+  	text-indent: -1em;
+  	font-family: 'Roboto Mono', monospace;
 }
 .timeline-date {
 	float: right;
