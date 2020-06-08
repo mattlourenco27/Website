@@ -14,6 +14,20 @@ body {
 	clear: both;
 }
 
+/* anchor configuration */
+.rounded-link {
+	display: inline-block;
+	text-decoration: none;
+	color: purple;
+	padding: 5px 10px;
+	border-radius: 1028px;
+	border: DarkViolet 1px solid;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+.rounded-link:hover {
+	background-color: lightgrey;
+}
+
 /* header and footer configuration */
 nav ul {
 	list-style-type: none;
@@ -72,6 +86,7 @@ footer nav a:hover {
 }
 #icon-credit a {
 	color: inherit;
+	box-shadow: none;
 }
 
 /* inner text configuration */
@@ -120,14 +135,15 @@ dd img {
 	float: right;
 	margin: 20px 100px 0 20px;
 	padding: 5px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 .terminal {
 	list-style: none;
 	margin-left: 0;
-    padding-left: 1em;
-    text-indent: -1em;
-    font-family: 'Roboto Mono', monospace;
+	margin-bottom: 20px;
+  padding-left: 1em;
+  text-indent: -1em;
+  font-family: 'Roboto Mono', monospace;
 }
 .timeline-date {
 	float: right;
