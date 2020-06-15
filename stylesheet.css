@@ -131,6 +131,9 @@ dt {
 dd {
 	font-size: 0.7em;
 }
+dd p {
+	width: 80%;
+}
 dd h4 {
 	margin: 0;
 }
