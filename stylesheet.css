@@ -123,7 +123,7 @@ dt {
 	background-color: DarkViolet;
 	color: white;
 	border-radius: 10px 50px 50px 10px;
-	width: 50%;
+	width: 90%;
 	padding: 5px 10px;
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
@@ -176,4 +176,20 @@ dd h4 {
 	vertical-align: middle;
 	padding: 200px 0;
 	max-height: 500px;
+}
+
+/* animations */
+.slide-in {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: transform 250ms ease-in, opacity 250ms ease-in;
+}
+
+dd.slide-in {
+	margin-top: 20px;
+}
+
+.slide-in.appear {
+	opacity: 1;
+	transform: none;
 }
