@@ -21,15 +21,16 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	color: purple;
-	transition: background-color 250ms ease-in;
+	transition: background-color 250ms ease-in, border-radius 250ms ease-in;
 	padding: 5px 10px;
-	border-radius: 1028px;
+	border-radius: 20px;
 	border: DarkViolet 1px solid;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
 .rounded-link:hover {
 	background-color: lightgrey;
+	border-radius: 5px;
 }
 
 /* header and footer configuration */
@@ -65,21 +66,6 @@ nav a:visited {
 nav a:hover {
 	color: DarkMagenta;
 	background-color: lightgrey;
-}
-
-header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	transform: none;
-	transition: transform 500ms ease-in;
-	z-index: 999;
-	background-color: white;
-	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-header.hide {
-	transform: translateY(-110%);
 }
 
 header span, footer span {
@@ -128,6 +114,7 @@ footer nav a:hover {
 	display: block;
 	text-align: center;
 	clear: right;
+	font-size: 12px;
 }
 
 #icon-credit a {
@@ -145,6 +132,7 @@ h1, h2 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5em;
 	color: Indigo;
+	margin-top: 0;
 }
 
 #introduction {
@@ -174,8 +162,8 @@ dt {
 	background-color: DarkViolet;
 	color: white;
 	border-radius: 10px 50px 50px 10px;
-	width: 90%;
-	padding: 5px 10px;
+	width: fit-content;
+	padding: 5px 30px 5px 10px;
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
@@ -221,8 +209,7 @@ dd h4 {
 }
 
 .timeline-date {
-	float: right;
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
 /* section separators */
@@ -240,6 +227,21 @@ dd h4 {
 }
 
 /* animations */
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transform: none;
+	transition: transform 500ms linear;
+	z-index: 999;
+	background-color: white;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+header.hide {
+	transform: translateY(-110%);
+}
+
 .slide-in {
 	opacity: 0;
 	transform: translateY(100px);

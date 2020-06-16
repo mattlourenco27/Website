@@ -20,11 +20,12 @@ slideIns.forEach(slideIn => {
 	slideObserver.observe(slideIn);
 })
 
+// header pop-in and out
+
 var lastScroll = 0;
 var downScrolls = 0;
 const header = document.getElementsByTagName("header")[0];
 
-// header pop-in and out
 window.onscroll = function(e) {
 	var scrolledUp = this.lastScroll > this.scrollY;
 	
@@ -42,3 +43,9 @@ window.onscroll = function(e) {
 
 	this.lastScroll = this.scrollY;
 }
+
+// edit anchors to give space for header
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 65);
+});
