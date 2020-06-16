@@ -9,7 +9,7 @@ body {
 
 #back-page {
 	width: 1100px;
-	margin: 0 auto;
+	margin: 80px auto 40px;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
@@ -37,6 +37,7 @@ nav ul {
 	list-style-type: none;
 	float: left;
 	margin: 0;
+	padding: 0;
 	font-size: 20px;
 }
 
@@ -64,6 +65,21 @@ nav a:visited {
 nav a:hover {
 	color: DarkMagenta;
 	background-color: lightgrey;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transform: none;
+	transition: transform 500ms ease-in;
+	z-index: 999;
+	background-color: white;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+header.hide {
+	transform: translateY(-110%);
 }
 
 header span, footer span {
@@ -128,6 +144,7 @@ section, article {
 h1, h2 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5em;
+	color: Indigo;
 }
 
 #introduction {
@@ -215,7 +232,7 @@ dd h4 {
 	text-align: center;
 	background-color: Indigo;
 	margin: 20px 0;
-	border-radius: 10px;
+	border-radius: 3px;
 	color: white;
 	vertical-align: middle;
 	padding: 200px 0;

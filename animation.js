@@ -3,7 +3,7 @@
 const slideIns = document.querySelectorAll(".slide-in");
 
 const slideOptions = {
-	rootMargin: "0px 0px -100px 0px",
+	rootMargin: "300px 0px -100px 0px",
 	threshold: 0
 };
 const slideObserver = new IntersectionObserver(function(entries, slideObserver) {
@@ -19,3 +19,26 @@ const slideObserver = new IntersectionObserver(function(entries, slideObserver) 
 slideIns.forEach(slideIn => {
 	slideObserver.observe(slideIn);
 })
+
+var lastScroll = 0;
+var downScrolls = 0;
+const header = document.getElementsByTagName("header")[0];
+
+// header pop-in and out
+window.onscroll = function(e) {
+	var scrolledUp = this.lastScroll > this.scrollY;
+	
+	if(scrolledUp) {
+		downScrolls = 0;
+	} else if(downScrolls < 10) {
+		downScrolls += 1;
+	}
+
+	if(downScrolls >= 10) {
+		header.classList.add("hide");
+	} else {
+		header.classList.remove("hide");
+	}
+
+	this.lastScroll = this.scrollY;
+}
