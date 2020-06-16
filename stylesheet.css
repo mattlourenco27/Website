@@ -6,6 +6,7 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 }
+
 #back-page {
 	width: 1100px;
 	margin: 0 auto;
@@ -20,11 +21,13 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	color: purple;
+	transition: background-color 250ms ease-in;
 	padding: 5px 10px;
 	border-radius: 1028px;
 	border: DarkViolet 1px solid;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
+
 .rounded-link:hover {
 	background-color: lightgrey;
 }
@@ -36,41 +39,65 @@ nav ul {
 	margin: 0;
 	font-size: 20px;
 }
+
 nav li {
 	background-color: inherit;
 	display: inline;
 	color: white;
 	width: 50%;
-	padding: 5px 10px;
+	padding: 5px 0;
 	margin: 2px 0;
 }
+
 nav a:link {
 	color: DarkViolet;
+	transition: background-color 250ms ease-in, color 250ms ease-in;
 	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 5px;
 }
+
 nav a:visited {
 	color: DarkViolet;
 }
+
 nav a:hover {
 	color: DarkMagenta;
+	background-color: lightgrey;
 }
+
 header span, footer span {
 	float:right;
 }
+
 footer {
 	background-color: #555555;
 	color: #888888;
 }
+
 footer nav a:link {
 	color: #888888;
 	text-decoration: none;
 }
+
 footer nav a:visited {
 	color: #888888;
 }
+
 footer nav a:hover {
 	color: #999999;
+	background-color: #444444;
 }
+
+.social-media {
+	border-radius: 3px;
+	transition: background-color 250ms ease-in;
+}
+
+.social-media:hover {
+	background-color: lightgrey;
+}
+
 #hf-margins {
 	display: block;
 	text-align: center;
@@ -79,12 +106,14 @@ footer nav a:hover {
 	padding: 10px 0;
 	background-color: inherit;
 }
+
 #icon-credit {
 	float: none;
 	display: block;
 	text-align: center;
 	clear: right;
 }
+
 #icon-credit a {
 	color: inherit;
 	box-shadow: none;
@@ -95,18 +124,22 @@ section, article {
 	text-align: left;
 	padding: 20px;
 }
+
 h1, h2 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5em;
 }
+
 #introduction {
 	display: block;
 	text-align: left;
 	height: 500px;
 }
+
 #introduction p {
 	padding-top: 200px;
 }
+
 #profile-photo {
 	float: right;
 	margin-left: 2%;
@@ -118,6 +151,7 @@ h1, h2 {
 dl {
 	list-style-type: none;
 }
+
 dt {
 	clear: both;
 	background-color: DarkViolet;
@@ -128,15 +162,19 @@ dt {
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
+
 dd {
 	font-size: 0.7em;
+	margin-top: 20px;
 }
+
 dd p {
 	width: 80%;
 }
 dd h4 {
 	margin: 0;
 }
+
 .media-right {
 	float: right;
 	text-align: center;
@@ -145,6 +183,7 @@ dd h4 {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 }
+
 .media-break {
 	width: fit-content;
 	text-align: center;
@@ -153,6 +192,7 @@ dd h4 {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 }
+
 .terminal {
 	list-style: none;
 	margin-left: 0;
@@ -162,6 +202,7 @@ dd h4 {
   	text-indent: -1em;
   	font-family: 'Roboto Mono', monospace;
 }
+
 .timeline-date {
 	float: right;
 	font-size: 0.8em;
@@ -172,7 +213,7 @@ dd h4 {
 	display: block;
 	clear: both;
 	text-align: center;
-	background-color: DarkViolet;
+	background-color: Indigo;
 	margin: 20px 0;
 	border-radius: 10px;
 	color: white;
@@ -185,11 +226,7 @@ dd h4 {
 .slide-in {
 	opacity: 0;
 	transform: translateY(100px);
-	transition: transform 250ms ease-in, opacity 250ms ease-in;
-}
-
-dd.slide-in {
-	margin-top: 20px;
+	transition: transform 500ms ease-in, opacity 500ms ease-in;
 }
 
 .slide-in.appear {
