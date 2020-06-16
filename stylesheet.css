@@ -157,7 +157,7 @@ dl {
 	list-style-type: none;
 }
 
-dt {
+.timeline-element {
 	clear: both;
 	background-color: DarkViolet;
 	color: white;
@@ -167,6 +167,24 @@ dt {
 	margin: 2px 0;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
+
+.timeline-hor-line {
+	border-color: DarkViolet;
+	margin-bottom: 0;
+}
+
+dt {
+	display: flex;
+	flex-direction: row;
+}
+
+dt:after {
+	content: "";
+	flex: 1 1;
+	border-bottom: 5px solid DarkViolet;
+	margin: auto;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+} 
 
 dd {
 	font-size: 0.7em;
