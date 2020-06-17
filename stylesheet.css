@@ -9,7 +9,7 @@ body {
 
 #back-page {
 	width: 1100px;
-	margin: 80px auto 40px;
+	margin: 110px auto 40px;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
@@ -39,7 +39,6 @@ nav ul {
 	float: left;
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
 }
 
 nav li {
@@ -152,6 +151,12 @@ h1, h2 {
 	border-radius: 5px;
 }
 
+.logo-line {
+	text-align: center;
+	font-size: 0;
+	margin-bottom: 20px;
+}
+
 /** timeline sub-section **/
 dl {
 	list-style-type: none;
@@ -172,6 +177,13 @@ dd p {
 }
 dd h4 {
 	margin: 0;
+}
+
+.media-line {
+	margin: 5px 10px;
+	padding: 5px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
 }
 
 .media-right {
@@ -234,13 +246,14 @@ dd h4 {
 	display: block;
 	clear: both;
 	text-align: center;
+	position: relative;
+	z-index: 1;
 	background-color: Indigo;
 	margin: 20px 0;
 	border-radius: 3px;
 	color: white;
 	vertical-align: middle;
-	padding: 200px 0;
-	max-height: 500px;
+	min-height: 100px;
 }
 
 /* animations */
@@ -251,6 +264,7 @@ header {
 	transform: none;
 	transition: transform 500ms linear;
 	z-index: 999;
+	padding-top: 30px;
 	background-color: white;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }

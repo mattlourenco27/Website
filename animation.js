@@ -28,7 +28,7 @@ const header = document.getElementsByTagName("header")[0];
 
 window.onscroll = function(e) {
 	var scrolledUp = this.lastScroll > this.scrollY;
-	
+
 	if(scrolledUp) {
 		downScrolls = 0;
 	} else if(downScrolls < 10) {
@@ -47,5 +47,5 @@ window.onscroll = function(e) {
 // edit anchors to give space for header
 
 window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 65);
+    window.scrollTo(window.scrollX, window.scrollY - 110);
 });
