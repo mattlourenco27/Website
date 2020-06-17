@@ -36,7 +36,6 @@ body {
 /* header and footer configuration */
 nav ul {
 	list-style-type: none;
-	float: left;
 	margin: 0;
 	padding: 0;
 }
@@ -67,10 +66,6 @@ nav a:hover {
 	background-color: lightgrey;
 }
 
-header span, footer span {
-	float:right;
-}
-
 footer {
 	background-color: #555555;
 	color: #888888;
@@ -99,8 +94,8 @@ footer nav a:hover {
 	background-color: lightgrey;
 }
 
-#hf-margins {
-	display: block;
+.hf-margins {
+	display: flex;
 	text-align: center;
 	width: 1100px;
 	margin: 0 auto;
@@ -108,17 +103,20 @@ footer nav a:hover {
 	background-color: inherit;
 }
 
+.spacer {
+	content: "";
+	flex: 1 1;
+}
+
 #icon-credit {
-	float: none;
 	display: block;
+	margin: 0 auto;
 	text-align: center;
-	clear: right;
 	font-size: 12px;
 }
 
 #icon-credit a {
 	color: inherit;
-	box-shadow: none;
 }
 
 /* inner text configuration */
@@ -254,6 +252,10 @@ dd h4 {
 	color: white;
 	vertical-align: middle;
 	min-height: 100px;
+}
+
+.block-separator {
+	margin: 50px 0;
 }
 
 /* animations */
