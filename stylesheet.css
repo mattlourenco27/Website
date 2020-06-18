@@ -267,6 +267,28 @@ h1, h2 {
 	margin: 50px 0;
 }
 
+/* contact */
+#contact-list {
+	color: DarkViolet;
+	display: flex;
+	flex-direction: row;
+	margin: 60px 0;
+}
+
+#contact-list span {
+	margin: 0 20px;
+}
+
+#email-link {
+	text-decoration:none;
+	color: inherit;
+	transition: background-color 250ms ease-in;
+}
+
+#email-link:hover {
+	background-color: lightgrey;
+}
+
 /* animations */
 header {
 	position: fixed;
