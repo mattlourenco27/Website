@@ -5,11 +5,14 @@ body {
 	background-color: snow;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
+	font-size: 3vh;
 }
 
 #back-page {
 	width: 1100px;
+	width: 80%;
 	margin: 110px auto 40px;
+	margin: 15vh auto 4vh;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
@@ -34,16 +37,20 @@ body {
 }
 
 /* header and footer configuration */
+#header-ul {
+	position: relative;
+	top: 40%;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-nav li {
+nav ul li {
 	background-color: inherit;
 	display: inline;
-	color: white;
 	width: 50%;
 	padding: 5px 0;
 	margin: 2px 0;
@@ -54,6 +61,7 @@ nav a:link {
 	transition: background-color 250ms ease-in, color 250ms ease-in;
 	text-decoration: none;
 	padding: 0 10px;
+	padding: 0 1vw;
 	border-radius: 5px;
 }
 
@@ -86,6 +94,8 @@ footer nav a:hover {
 }
 
 .social-media {
+	width: 64px;
+	width: 5vw;
 	border-radius: 3px;
 	transition: background-color 250ms ease-in;
 }
@@ -94,13 +104,26 @@ footer nav a:hover {
 	background-color: lightgrey;
 }
 
+.social-media-f {
+	width: 32px;
+	width: 3vw;
+	border-radius: 3px;
+	transition: background-color 250ms ease-in;
+}
+
+.social-media-f:hover {
+	background-color: lightgrey;
+}
+
 .hf-margins {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 	width: 1100px;
+	width: 80%;
 	margin: 0 auto;
 	padding: 10px 0;
+	padding: 1vw 0;
 	background-color: inherit;
 }
 
@@ -114,6 +137,7 @@ footer nav a:hover {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 12px;
+	font-size: 2.5vh;
 }
 
 #icon-credit a {
@@ -137,6 +161,7 @@ h1, h2 {
 	display: block;
 	text-align: left;
 	height: 500px;
+	height: 60vh;
 }
 
 #introduction p {
@@ -145,6 +170,7 @@ h1, h2 {
 
 #profile-photo {
 	float: right;
+	width: 45%;
 	margin-left: 2%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
@@ -264,7 +290,14 @@ h1, h2 {
 }
 
 .block-separator {
-	margin: 50px 0;
+	width: 90%;
+	margin: 50px auto;
+	margin: 3vh auto;
+}
+
+.block-separator img {
+	width: 100%;
+	height: 100%;
 }
 
 /* contact */
@@ -297,7 +330,6 @@ header {
 	transform: none;
 	transition: transform 500ms linear;
 	z-index: 999;
-	padding-top: 30px;
 	background-color: white;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
