@@ -167,7 +167,10 @@ h1, h2 {
 
 #introduction p {
 	position: relative;
-	top: 30%;
+	top: 40%;
+	width: 45%;
+	text-align: center;
+	padding: 0 2vw;
 }
 
 #profile-photo {
@@ -230,8 +233,7 @@ h1, h2 {
 }
 
 .media-break {
-	width: fit-content;
-	width: -moz-fit-content;
+	width: min-content;
 	text-align: center;
 	margin-left: 20px;
 	margin-left: 2vw;
