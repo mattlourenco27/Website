@@ -1,5 +1,5 @@
-# Hello,
-My name is Matthew Lourenco.
+# Personal website project
+Hello, my name is Matthew Lourenco.
 I am an aspiring programmer currently studying in my third year of Computer Engineering at the University of Toronto.
 
 ## [Github Profile](https://github.com/mattlourenco27)
