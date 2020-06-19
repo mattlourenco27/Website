@@ -1,3 +1,7 @@
+// remove dragging of images and anchors
+
+$('img, a').attr('draggable', false);
+
 // transitions
 
 const slideIns = document.querySelectorAll(".slide-in");
@@ -39,6 +43,8 @@ const fadeObserver = new IntersectionObserver(function(entries, fadeObserver) {
 fadeIns.forEach(fadeIn => {
 	fadeObserver.observe(fadeIn);
 })
+
+// timeline nav animations
 
 $(".timeline-nav-link").mouseenter(element => {
 	element.currentTarget.firstElementChild.classList.add('widen');
