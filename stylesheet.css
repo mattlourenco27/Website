@@ -270,8 +270,8 @@ h1, h2 {
 .timeline-nav-list {
 	list-style-type: none;
 	color: Indigo;
-	margin: 50x 0;
-	margin: 5vw 0;
+	margin: 30px 0 50px;
+	margin: 3vw 0 5vw;
 }
 
 .timeline-nav-link {
