@@ -294,6 +294,26 @@ h1, h2 {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
+/* Achievements section */
+
+.round-ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.round-ul li {
+	background-color: DarkViolet;
+	color: white;
+	border-radius: 10px 50px 50px 10px;
+	padding: 5px 30px 5px 10px;
+	padding: 0.5vw 3vw 0.5vw 1vw;
+	width: fit-content;
+	width: -moz-fit-content;
+	margin: 5px 0;
+	margin: 0.5vw 0;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
 /* section separators */
 .separator {
 	display: block;
@@ -369,4 +389,13 @@ header.hide {
 .slide-in.appear {
 	opacity: 1;
 	transform: none;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+	opacity: 1;
 }

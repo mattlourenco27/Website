@@ -20,6 +20,26 @@ slideIns.forEach(slideIn => {
 	slideObserver.observe(slideIn);
 })
 
+const fadeIns = document.querySelectorAll(".fade-in");
+
+const fadeOptions = {
+	rootMargin: "0px 0px -100px 0px",
+	threshold: 0
+};
+const fadeObserver = new IntersectionObserver(function(entries, fadeObserver) {
+	entries.forEach(entry => {
+		if(entry.isIntersecting) {
+			entry.target.classList.add("appear");
+		} else if(!entry.isIntersecting) {
+			entry.target.classList.remove("appear");
+		}
+	});
+}, fadeOptions);
+
+fadeIns.forEach(fadeIn => {
+	fadeObserver.observe(fadeIn);
+})
+
 // header pop-in and out
 
 var lastScroll = 0;
