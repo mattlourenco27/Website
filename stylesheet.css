@@ -181,6 +181,13 @@ h1, h2 {
 	border-radius: 5px;
 }
 
+#mission-statement {
+	font-style: italic;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
 .logo-line {
 	text-align: center;
 	font-size: 0;
@@ -373,7 +380,7 @@ h1, h2 {
 .block-separator {
 	width: 90%;
 	margin: 50px auto;
-	margin: 3vh auto;
+	margin: 1vw auto;
 }
 
 .block-separator img {
@@ -386,11 +393,11 @@ h1, h2 {
 	color: Indigo;
 	display: flex;
 	flex-direction: row;
-	margin: 30px 0;
-	margin: 3vw 0;
+	margin: 30px 0 10px;
+	margin: 3vw 0 1vw;
 }
 
-#contact-list span {
+#contact-list span, #location-list span {
 	margin: 0 20px;
 	margin: 0 2vw;
 }
@@ -403,6 +410,14 @@ h1, h2 {
 
 #email-link:hover {
 	background-color: lightgrey;
+}
+
+#location-list {
+	color: Indigo;
+	display: flex;
+	flex-direction: row;
+	margin: 10px 0 30px;
+	margin: 1vw 0 3vw;
 }
 
 /* animations */
