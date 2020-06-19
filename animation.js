@@ -65,11 +65,11 @@ window.onscroll = function(e) {
 
 	if(scrolledUp) {
 		downScrolls = 0;
-	} else if(downScrolls < 10) {
+	} else if(downScrolls < 30) {
 		downScrolls += 1;
 	}
 
-	if(downScrolls >= 10) {
+	if(downScrolls >= 30) {
 		header.classList.add("hide");
 	} else {
 		header.classList.remove("hide");
