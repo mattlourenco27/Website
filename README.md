@@ -15,3 +15,5 @@ This is the source code page for my website. It was put together from scratch an
   * 19/06/2020
 * 1.1.1 - Changed Mission to be more accurate
   * 19/06/2020
+* 1.1.2 - Fixed issue where header would disappear on mobile
+  * 19/06/2020
