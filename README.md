@@ -10,3 +10,6 @@ This is the source code page for my website. It was put together from scratch an
 ## Version History
 
 * 1.0 - First Launch
+  * 19/06/2020
+* 1.1 - Fix svg loading
+  * 19/06/2020
