@@ -40,6 +40,14 @@ fadeIns.forEach(fadeIn => {
 	fadeObserver.observe(fadeIn);
 })
 
+$(".timeline-nav-link").mouseenter(element => {
+	element.currentTarget.firstElementChild.classList.add('widen');
+});
+
+$(".timeline-nav-link").mouseleave(element => {
+	element.currentTarget.firstElementChild.classList.remove('widen');
+});
+
 // header pop-in and out
 
 var lastScroll = 0;

@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="animation.js" defer></script>
 </head>
 
@@ -58,8 +59,21 @@
 				<img class="media-line" src="images/javascript-logo.png" alt="JavaScript logo"/>
 			</div>
 
+			<ul class="timeline-nav-list">
+				<li><a class="timeline-nav-link" href="#ics3u"><div class="timeline-nav">Introduction to Computer Science</div></a></li>
+				<li><a class="timeline-nav-link" href="#youi"><div class="timeline-nav">You.i TV - CO-OP Placement</div></a></li>
+				<li><a class="timeline-nav-link" href="#ics4u"><div class="timeline-nav">Computer Science</div></a></li>
+				<li><a class="timeline-nav-link" href="#ece"><div class="timeline-nav">U of T Computer Engineering</div></a></li>
+				<li><a class="timeline-nav-link" href="#utra"><div class="timeline-nav">U of T Robotics Association</div></a></li>
+				<li><a class="timeline-nav-link" href="#utat"><div class="timeline-nav">U of T Aerospace Team</div></a></li>
+				<li><a class="timeline-nav-link" href="#machine-learning"><div class="timeline-nav">Stanford U Machine Learning</div></a></li>
+				<li><a class="timeline-nav-link" href="#timeline-projects"><div class="timeline-nav">Personal Projects</div></a></li>
+				<li><a class="timeline-nav-link" href="#web-dev"><div class="timeline-nav">HTML / CSS / JavaScript</div></a></li>
+				<li><a class="timeline-nav-link" href="#future"><div class="timeline-nav">Future</div></a></li>
+			</ul>
+
 			<dl style="list-style-type: none;">
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="ics3u">
 					<span class="timeline-element">ICS3U - Introduction to Computer Science</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Fall 2016</span>
@@ -77,7 +91,7 @@
 						<li>>_ App development for the Apple App Store</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="youi">
 					<span class="timeline-element">You.i TV - CO-OP Placement</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Winter 2017 - Summer 2017</span>
@@ -96,7 +110,7 @@
 						<li>>_ Debugging/Finding Workarounds</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="ics4u">
 					<span class="timeline-element">ICS4U - Computer Science</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Winter 2018</span>
@@ -116,7 +130,7 @@
 						<li>>_ Recursion in programming</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="ece">
 					<span class="timeline-element">University of Toronto - Computer Engineering</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Summer 2018 - Present</span>
@@ -148,7 +162,7 @@
 						<li>>_ Team leader in Engineering Design teams to solve client requests</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="utra">
 					<span class="timeline-element">University of Toronto Robotics Association</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Fall 2018 - Present</span>
@@ -204,7 +218,7 @@
 						</ul>
 					</div>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="utat">
 					<span class="timeline-element">University of Toronto Aerospace Team</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Fall 2018 - Summer 2019</span>
@@ -231,7 +245,7 @@
 						<li>>_ Teamwork and Communication</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="machine-learning">
 					<span class="timeline-element">Stanford University - Machine Learning</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Summer 2019</span>
@@ -251,7 +265,7 @@
 						<li>>_ MATLAB scripting</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="timeline-projects">
 					<span class="timeline-element">Personal Projects</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Summer 2019 - Present</span>
@@ -272,8 +286,8 @@
 						<li>>_ JavaScript</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
-					<span class="timeline-element">HTML / CSS / Javascript</span>
+				<dt class="timeline-title slide-in" id="web-dev">
+					<span class="timeline-element">HTML / CSS / JavaScript</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Summer 2020 - Present</span>
 				</dt>
@@ -297,7 +311,7 @@
 						<li>>_ JavaScript</li>
 					</ul>
 				</dd>
-				<dt class="timeline-title slide-in">
+				<dt class="timeline-title slide-in" id="future">
 					<span class="timeline-element">Future</span>
 					<span class="timeline-line"></span>
 					<span class="timeline-date">Upcoming</span>
