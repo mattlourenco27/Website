@@ -17,3 +17,5 @@ This is the source code page for my website. It was put together from scratch an
   * 19/06/2020
 * 1.1.2 - Fixed issue where header would disappear on mobile
   * 19/06/2020
+* 1.2 - Added MySQL section to website timeline, removed SQL and WebCrawling from Future plans
+  * 14/08/2020
